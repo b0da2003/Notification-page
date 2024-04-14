@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <article class="notification-top">
+        <div class="notifiy">
+          <h1>Notifications</h1>
+          <h2 class="not-read"></h2>
+        </div>
+
+        <span class="mark">Mark all as read</span>
+      </article>
+
+      <div class="all-cards">
+        <div data-aos="fade-right" data-aos-duration="400" class="cards card1 uncheck">
+          <img
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="Mark Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Mark Webber</h2>
+              <p>reacted to your recent post</p>
+              <span>My first tournament today!</span>
+              <span class="red-dot"></span>
+            </span>
+
+            <span class="time">1m ago</span>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="800" class="cards card2 uncheck">
+          <img
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="Mark Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Amgela Gray</h2>
+              <p>followed you</p>
+              <span class="red-dot"></span>
+            </span>
+
+            <span class="time">5m ago</span>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="850" class="cards card3 uncheck">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="Mark Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Jacob Thompson</h2>
+              <p>has joined your group</p>
+              <span class="chess">Chess Club</span>
+              <span class="red-dot"></span>
+            </span>
+
+            <span class="time">1day ago</span>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="900" class="cards card4 check">
+          <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Mark Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Rizky Hassanuddin</h2>
+              <p>sent you a private message</p>
+            </span>
+
+            <span class="time">5days ago</span>
+
+            <div class="message">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                recusandae doloremque, autem eligendi vitae maiores qui quos
+                nesciunt necessitatibus veritatis odio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="950" class="cards card5 check">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="Kimberly Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Kimberly Smith</h2>
+              <p>commented on your picture</p>
+            </span>
+
+            <span class="time">1week ago</span>
+          </div>
+
+          <img src="./assets/images/image-chess.webp" alt="Chess Picture" />
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="cards card6 check">
+          <img
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="Nathan Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Nathan Peterson</h2>
+              <p>reacted to your recent post</p>
+              <span class="card6-span">5 end-ganme strategies to increase your win rate.</span>
+            </span>
+
+            <span class="time">2weeks ago</span>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1050" class="cards card7 check">
+          <img
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="Anna Picture" />
+
+          <div class="content">
+            <span class="about">
+              <h2>Anna Kim</h2>
+              <p>Left the group</p>
+              <span class="chess">Chess Club</span>
+            </span>
+
+            <span class="time">2weeks ago</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
